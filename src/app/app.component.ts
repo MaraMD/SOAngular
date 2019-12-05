@@ -19,10 +19,10 @@ export class AppComponent implements OnInit{
   ngOnInit(){
     this.identity = this.apiService.getToken()
     console.log(this.identity);
-    if(this.identity == null){
-      this.router.navigate(['/login']);
-    }else
-      this.router.navigate(['/home']);
-      //this.router.navigate(['/busqueda']);
-  }
+    // if(this.identity == null){
+        this.router.navigate(['/login']);
+  //   }else
+  //     this.router.navigate(['/home']);
+  //     //this.router.navigate(['/busqueda']);
+   }
 }
