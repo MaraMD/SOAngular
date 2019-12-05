@@ -11,28 +11,23 @@
 
     <form #registerForm="ngForm" (ngSubmit)="createUser()" class="col-lg-12">
         <p>
-            <label>Nombre</label>
-            <input type="text" name="name" #name="ngModel" [(ngModel)]="user.nombre" class="form-control" required>
+            <input type="text" name="name" #name="ngModel" [(ngModel)]="user.nombre" class="form-control" placeholder="Nombre" required>
         </p>
 
         <p>
-            <label>Apellidos</label>
-            <input type="text" name="name" #name="ngModel" [(ngModel)]="user.apellidos" class="form-control" required>
+            <input type="text" name="name" #name="ngModel" [(ngModel)]="user.apellidos" class="form-control" placeholder="Apellidos" required>
         </p>
 
         <p>
-            <label>edad</label>
-            <input type="text" name="lastName" #lastName="ngModel" [(ngModel)]="user.edad" class="form-control"
+            <input type="text" name="lastName" #lastName="ngModel" [(ngModel)]="user.edad" class="form-control" placeholder="Edad"
                 required>
         </p>
         <p>
-            <label>sexo</label>
-            <input type="text" name="lastName" #lastName="ngModel" [(ngModel)]="user.sexo" class="form-control"
+            <input type="text" name="lastName" #lastName="ngModel" [(ngModel)]="user.sexo" class="form-control" placeholder="Sexo"
                 required>
         </p>
         <p>
-            <label>dirección</label>
-            <input type="text" name="lastName" #lastName="ngModel" [(ngModel)]="user.direccion" class="form-control"
+            <input type="text" name="lastName" #lastName="ngModel" [(ngModel)]="user.direccion" class="form-control" placeholder="Direccion"
                 required>
         </p>
 
@@ -48,7 +43,8 @@
         </div>
         <br>
         <br>
-        <input type="submit" value="Agregar" class="btn btn-success">
+        <input type="submit" value="Agregar" class="btn btn-primary">
     </form>
 
 </div>
+
