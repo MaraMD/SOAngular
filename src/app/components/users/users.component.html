@@ -1,4 +1,4 @@
-<h2>Buscar usuarios</h2>
+<h2>Buscar Alumnos</h2>
 <form #searchForm="ngForm" class="form-inline" (ngSubmit)="buscar()">
     <div class="form-group">
         <input type="text" class="form-control" id="inputPassword2" #name="ngModel" [(ngModel)]="busqueda"
@@ -6,12 +6,16 @@
     </div>
     <button type="submit" class="btn btn-primary mb-2">Buscar</button>
 </form>
+
+
+
 <div *ngIf="users">
     <ul class="list-group">
         <li class="list-group-item" *ngFor="let user of users">
             <div class="card">
                 <h5 class="card-title">{{user.nombre}} {{user.apellidos}}</h5>
-                <p class="card-text">Edad: {{user.edad}} Dirección {{user.direccion}}</p>
+                <h5 class="card-text">Edad: {{user.edad}} </h5>
+                 <p>   Dirección {{user.direccion}}</p>
                 <h6 class="card-subtitle mb-2 text-muted">{{user.carrera}}</h6>
                 <div class="card-body">
                     <button type="button" class="btn btn-info" (click)="editUser(user.id)">Editar</button>
